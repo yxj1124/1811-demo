@@ -1,0 +1,14 @@
+
+@import './mixins.scss';
+$color:red;
+.a{
+    color: $color;
+    @include border;
+    .b{
+        color: darken($color,20)
+    }
+}
+h1{
+	color: green;
+	text-align: center;
+}
