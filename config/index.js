@@ -15,7 +15,7 @@ const config={
 		port:8000,
 		livereload: true
 	},
-	pages:['index','list','car'],
+	pages:['index','list','register','product',"goods"],
 	cssoptions:{//css配置
 		'index':{//index页面的css
 		    'common':[//index页面处理后的common.min.css需要合并的文件
@@ -31,6 +31,25 @@ const config={
 			'./src/views/list/stylesheets/*.scss'
 			]
 			
+		},
+		'register':{
+			'register':[
+				'./src/stylesheets/reset.scss',
+				'./src/views/register/stylesheets/*.scss'
+			]
+			
+		},
+		'product':{
+			'product':[
+				'./src/stylesheets/reset.scss',
+				'./src/views/product/stylesheets/*.scss'
+			]
+		},
+		'goods':{
+			'goods':[
+				'./src/stylesheets/reset.scss',
+				'./src/views/goods/stylesheets/*.scss'
+			]
 		}
 			
 		
@@ -41,9 +60,15 @@ const config={
 					index:'./src/views/index/javascripts/index.js',
 					vendor:'./src/views/index/javascripts/vendor.js'
 		},
-		'list':'./src/views/list/javascripts/list.js'
+		
+			'list':'./src/views/list/javascripts/list.js',
+			'register':'./src/views/register/javascripts/register.js',
+			'product':'./src/views/product/javascripts/product.js',
+			'goods':'./src/views/goods/javascripts/goods.js'
+			
 		
 	}
 }
+
 //把config暴露出去 是为了在其他地方用 ，只能暴露一次
 module.exports=config

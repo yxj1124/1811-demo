@@ -1,11 +1,290 @@
-body{
+*{
 	margin: 0;
 	padding: 0;
 }
-li{
-	list-style: none;
-	
+html body{
+	color: #6b6b6b;
+	font: 12px/1.5 Arial,simsun;
+    text-align: left;
 }
-h1{
-	font-size: 30px;
+a{
+	text-decoration: none;
+	color: #ffffff;
+	cursor: pointer;
+    outline: none;
+}
+ol ul{
+	list-style: none;
+}
+//导航样式
+.container{
+	margin: 0 auto;
+	width: 1200px;
+	padding: 0px;
+	position: relative;
+	font-family: "微软雅黑";
+}
+#jid{
+	position: fixed;
+	z-index: 1200;
+	width: 100%;
+	background: #fff;
+}
+	
+.header-bar{
+	width: 1200px;
+	height: 120px;
+	margin: 0 auto;
+}
+.dp_logo{
+	width: 390px;
+	position: absolute;
+	top: 10px;
+}
+.rigth-bar{
+    width: 490px;
+    right: 0px;
+	position: absolute;
+	top: 27px;
+}
+.search-bar{
+	width: 250px;
+	float: left;
+}
+.dp-2013090511 .search-key{
+	float: left;
+	height: 20px;
+	overflow: hidden;
+	margin: 0px 0px;
+	border: 0px;
+	color: #91847b;
+	font-size: 12px;
+	padding: 5px 5px;
+	background-color: #eeeeee;
+}
+.dp-2013090511 .search-btn{
+	width: 30px;
+	height: 30px;
+	display: block;
+	padding: 0px 0px;
+	border: 0px;
+	background: url(/images/dapu_homeseach.png) no-repeat 7px 7px;
+	cursor: pointer;
+	background-color: rgba(255, 255,255, 0);
+	position:absolute;
+	left: 175px;
+	top: -5px;
+}
+.car-bar{
+	float: right;
+	width: 0px;
+	height: 30px;
+	position: absolute;
+	left: 265px;
+	top: 9px;
+}
+.minicart_box{
+	width: 25px;
+	z-index: 10;
+	position: absolute;
+	margin-top: -2px;
+	right: 0px;
+}
+.minicart_title{
+	position: relative;
+	z-index: 10;
+}
+.minicart_title a{
+	cursor: pointer;
+	outline:none;
+}
+.cart-handle{
+	display: block;
+	line-height: 30px;
+	background: url(/images/dapu_minicart.png) 25px 25px;
+}
+.cart-number{
+	position: absolute;
+	top:-5px;
+	left: 20px;
+	display: inline-block;
+	padding: 1px 2px;
+	font-size: 12px;
+	line-height: 12px;
+	color: #fff;
+	background-color: rgb(177,84,79);
+	border-radius: 10px;
+	min-width: 15px;
+	text-align: center;
+	min-height: 15px; 
+}
+.login-bar{
+	float: right;
+    height: 30px;
+    margin-right: 40px;
+}
+.login-info-0905{
+	float: right;
+	padding: 0px 15px 0;
+	height: 30px;
+	line-height: 28px;
+
+}
+.sysemenu_bar{
+	z-index: 1;
+	position: absolute;
+	top: -45px;
+}
+.user-ui-header-box{
+	width: 100%;
+	background-color: rgba(255, 255,255, 0);
+	margin: 0 0;
+	padding: 0 0;
+}
+.clearfix{
+	display: block;
+}
+.user-ui-header-box .index-nav-one-box{
+	width: 100px;
+	float: left;
+	text-align: center;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+.user-ui-header-box .nav-one-box{
+	width: 100px;
+	float: left;
+	text-align: center;
+	background-color: rgba(255, 255,255, 0);
+	position: relative;
+	top: 0px;
+	left: 0px;
+	list-style: none;
+}
+.nav-one-box .nav-one{
+	color: #605046;
+	font-family:  "Microsoft YaHei", 微软雅黑;
+	font-size: 14px;
+	height: 50px;
+	line-height: 50px;
+	display: block;
+	text-decoration: none;
+}
+.separator{
+	position: absolute;
+	right: 0px;
+	background: url(/images/dapu_menu_diandian.png);
+	width: 2px;
+	height: 9px;
+	margin: 22px 0px;
+	top:0px;
+}
+//选项卡样式
+.user-ui-header-box .dh-tab-1{
+	width: 750px;
+	right: -660px;
+	height: 300px;
+}
+.user-ui-header-box .tab-left{
+	position: absolute;
+	top: 45px;
+	left: 0px;
+}
+.user-ui-header-box .dh-show-tab{
+	text-align: left;
+	border-radius: 0 0 4px 4px;
+	z-index: 1900;
+	white-space: nowrap;
+	margin-top: -1px;
+}
+.nav-two-box{
+	padding: 0px 18px 10x 10px;
+}
+.nav-one-box .nav-one .title:hover {
+	text-decoration: none;
+	font-weight:bold;
+}
+
+.nav-two-box .nav-two{
+	display: block;
+	font-size: 14px;
+	line-height: 30px;
+	margin-left: 20px;
+	font-weight: bold;
+	color: #6b6b6b;
+	text-decoration: none;
+}
+.nav-two-box .nav-two:hover{
+	
+	font-weight:bold;
+}
+.nav-three-box:hover{
+	font-weight:bold;
+}
+.nav-three-box .clearfix{
+	padding: 0px 0px;
+    white-space: nowrap;
+    height: 0px;
+    margin-left: 0px;
+}
+.clearfix{
+	display: block;
+}
+.nav-three-box .nav-three {
+    font-size: 12px;
+    position: relative;
+    top: -22px;
+    left: 90px;
+    padding: 0px 3px;
+    white-space: nowrap;
+	margin: 4px 0px;
+	color: #6B6B6B;
+}
+.nav-three-box .nav-three：hover{
+	text-decoration: none;
+	background-color: #b2a89e;
+	color: #ffffff;
+}
+.zhezhao{
+	width: 1520px;
+	height: 270px;
+	opacity: 0.8;
+	position: absolute;
+	background-color: #fff;
+	margin-left: -228px;
+	display:none;
+	z-index: 0;
+}
+.nav-one-box-on{
+	z-index: 2;
+    display: block;
+}
+//尾部
+.footer{
+	margin: 0 auto;
+	width: 1200px;
+	height: 78px;
+}
+
+.site-footer-context{
+	font-size: 12px;
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+.user-ui-ul li{
+	float: left;
+	padding: 5px 0px;
+	list-style: none;
+}
+.user-ui-ul li a{
+	color: #6b6b6b;
+}
+.user-ui-ul li span{
+	padding: 5px 5px;
+}
+.user-ui-copyright{
+	white-space: pre-wrap;
+	word-spacing: 2px;
 }

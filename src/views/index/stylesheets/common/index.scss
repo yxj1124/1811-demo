@@ -1,6 +1,310 @@
-body{
-	background: #008000;
+//头部
+//楼梯样式
+#LoutiNav{
+				
+	position: fixed;
+	top: 40%;
+	right: 0px;
+	width:30px;
+	z-index: 999;
+	border: 1px solid ;
 }
-h1{
-	color: #66512C;
+#LoutiNav ul li{
+	position:relative;
+	width:30px;
+	height:30px;
+	list-style:none;
+	text-align:center;
+	line-height: 30px;
+	font-size: 12px;
+	cursor: pointer;
+	border-bottom: 1px dotted #AAAAAA;
+}
+#LoutiNav ul li.last {
+	background: darkred;
+	color: white;
+	border-bottom: none;
+}
+#LoutiNav ul li span{
+	display: none;
+	width:30px;
+	height: 30px;
+	position: absolute;	
+	top: 0;
+	left: 0;
+	color:red;
+}
+#LoutiNav ul li:hover span{
+	display: block;
+	background: darkred;
+	color: white;
+}
+#LoutiNav ul li span.active {
+	display: block;
+	background: white;
+	color: red;
+}
+#LoutiNav ul li:hover span.active{
+	display: block;
+	background: darkred;
+	color: white;
+}
+
+
+// banner部分
+.banner{
+	height: 450px;
+	min-width: 1200px;
+}
+#Slidebox{
+	width: 100%;
+	height: 450px;
+	padding: 0px;
+	margin: 0 auto;
+	background: #fff;
+	overflow: hidden;
+	position: relative;
+}
+#banner{
+	width: 1200px;
+	height: 450px;
+	position: relative;
+	left: 0;
+	top: 0;
+	margin: 0 auto;
+}
+#banner_list{
+	width: 1200px;
+	height: 450px;
+	overflow: hidden;
+	position: absolute;
+	clear: both;
+	padding: 0px 0px;
+	left: 0;
+	top: 0;
+	margin: 0 auto;
+}
+#banner_list li{
+	width: 1200px;
+	height: 450px;
+}
+#banner_list img{
+	width: 1200px;
+	height: 450px;
+	border: 0px;
+}
+.flex-control-paging{
+	width: 100%;
+	height: 0px;
+	position: relative;
+	text-align: center;
+	z-index: 10px;
+	top:-50px;
+}
+
+.flex-control-paging li {
+	cursor: pointer;
+	border-radius: 20px;
+	width: 16px;
+	height: 16px;
+	box-shadow: inset 0 0 3px #fff;
+	// position: absolute;
+	text-indent: -999px;
+	margin: 10px 3px;
+	display: inline-block;
+}
+.cj{
+	text-align: center;
+	font-size: 22px;
+	margin-top: 20px;
+	font-weight: bold;
+	font-family: 微软雅黑;
+}
+.home_article{
+	width: 1200px;
+	margin: 0 auto;
+	height: 330px;
+}
+.home_article_w{
+	position: relative;
+	width: 398px;
+	margin: 0 1px;
+	float: left;
+	margin-bottom: 20px;
+}
+.col-xs-12{
+	width: 100%;
+	float: left;
+}
+.h_img{
+	opacity: 1;
+	transition: all 1s linear;
+	transform: scale(1);
+}
+.h_img:hover{
+	transition: all 1s linear;
+	transform: scale(1.05);
+}
+.article_box{
+	font-family: 微软雅黑;
+	position: absolute;
+	bottom: -100px;
+	width: 380px;
+	margin-left: 9px;
+	height: 128px;
+	background: #eeeeee;
+	z-index: 999;
+}
+.col-xs-12{
+	width: 100%;
+	position: relative;
+	float: left;
+}
+.col-xs-2{
+	width: 16.66%;
+	position: relative;
+	float: left;
+}
+.col-xs-10{
+	width: 83.33%;
+	position: relative;
+	float: left;
+}
+.col-xs-6{
+	width: 50%;
+	position: relative;
+	float: left;
+}
+.col-xs-7{
+	width: 58.33%;
+	position: relative;
+	float: left;
+}
+.col-xs-5{
+	width: 41.66%;
+	position: relative;
+	float: left;
+}
+.col-xs-4{
+	width: 33.33%;
+	position: relative;
+	float: left;
+}
+.tiao{
+	float: right;
+	width: 4px;
+	height: 16px;
+	background: #76c5af;
+	margin-top:5px;
+}
+.container{
+	padding: 0px;
+	margin: 0 auto;
+	position: relative;
+}
+.recoldmodel{
+	float: left;
+	position: relative;
+}
+.review-wrapper{
+	position: absolute;
+	transition: all .2s linear;
+	bottom: 0px;
+	z-index: 3;
+	overflow: hidden;
+	font-size: 13px;
+	background: #fff;
+	text-align: center;
+	color: #000;
+	opacity: 0;
+	padding-top: 10px;
+
+}
+.site-con{
+	margin: 0 auto;
+	width: 1200px;
+	
+}
+.mian-con{
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	padding: 0 0;
+	height: auto;
+	overflow: hidden;
+}
+.nav-grllay-nav{
+	list-style-type: none;
+	border-bottom: none;
+}
+.nav-img {
+	width: 238px;
+	height: 238px;
+	position: relative;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	float: left;
+}
+.nav-grllay-nav img{
+	border: 2px solid #fff;
+}
+.nav-img001 .review-wrapper{
+	bottom: -238px;
+}
+.nav-img004 .review-wrapper{
+	bottom: -238px;
+}
+.footer{
+	margin: 0 auto;
+	background: #eee;
+	width: 1200px;
+	height: 266px;
+}
+.footer .qrcode_box {
+	width:1200px;
+	margin: 0 auto;
+	padding: 20px 0px;
+    display: block;
+}
+.qrcode_box li{
+	width: 25%;
+	float: left;
+	list-style: none;
+}
+.item{
+	text-align: center;
+}
+.tu{
+	width: 120px;
+	height: 120px;
+}
+.text{
+	line-height: 30px;
+}
+.site-footer-context{
+	font-size: 12px;
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+.user-ui-ul li{
+	float: left;
+	padding: 5px 0px;
+	list-style: none;
+}
+.user-ui-ul li a{
+	color: #6b6b6b;
+}
+.user-ui-ul li span{
+	padding: 5px 5px;
+}
+.user-ui-copyright{
+	white-space: pre-wrap;
+	word-spacing: 2px;
+}
+body{
+	position: relative;
+}
+.yuan{
+	background: #fff;
 }

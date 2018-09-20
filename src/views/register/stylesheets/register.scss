@@ -1,0 +1,108 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+	position: relative;
+}
+//内容
+.reg-main{
+	margin:50px auto 0;
+	font-family: 微软雅黑;
+}
+
+.reg-main .reg-box .reg-body{
+	padding: 5px 20px;
+}
+#reg_box{
+	background: url(/images/login2.jpg);
+}
+.reg-main .reg-box .reg-body .form-panel{
+	padding: 20px 0px;
+}
+.formPanel{
+	margin: 0 auto;
+}
+.reg-xxx{
+	// width: 45%;
+	background: rgb(255, 255,255);
+	border-radius: 5px 5px;
+}
+.formPanel .field{
+	padding: 0 0 0 20%;
+	overflow: visible;
+	height: 50px;
+	line-height: 26px;
+}
+.formPanel .field label{
+	float: left;
+	width: 325px;
+	margin: 0 0 0 -315px;
+	color: #5e5e5e;
+	text-align: right;
+}
+.txt7{
+	width: 170px;
+	height: 25px;
+}
+.txt7 .txt6 .txt5 .txt3 .txt4 .txt2 .txt1 .txt8{
+	height: 24px;
+	margin-right: 3px;
+	padding: 0 6px;
+	border: 1px solid #dad9d9;
+	line-height: 24px;
+	vertical-align: top;
+}
+.txt3{
+	width: 75px;
+}
+.errormsg{
+	padding: 2px 15px 3px 15px;
+	margin: 0 2px 1em 2px;
+	background-color: #ffffe6;
+	color: #f00;
+}
+#tishi2{
+	padding-left: 2px;
+}
+.pw-strength{
+	clear: both;
+	position: relative;
+	top: 8px;
+	width: 180px;
+}
+.pw-txt{
+	padding-top: 2px;
+	width: 200px;
+}
+.pw-txt span{
+	color: #707070;
+	float: left;
+	font-size: 12px;
+	text-align: center;
+	width: 58px;
+	background: #fff;
+	border: 1px solid #e0dfdb;
+	border-radius: 10px 10px;
+	margin-top: -8px;
+	margin-left: 6px;
+}
+.floatdiv a{
+	color: #6b6b6b;
+}
+.reg-main .reg-box .reg-body .form-panel .reg-btn{
+	background: #fff;
+	border: 1px solid #e0dfdb;
+	margin: 0 0;
+	padding: 0 0 ;
+	display: inline-block;
+	line-height: 40px;
+	width: 200px;
+	font-size: 16px;
+	cursor: pointer;
+	color: #6b6b6b;
+}
+.formPanel .actions{
+	padding: 10px 0 0 20%;
+}

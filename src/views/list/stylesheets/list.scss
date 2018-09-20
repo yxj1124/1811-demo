@@ -1,14 +1,114 @@
 
 @import './mixins.scss';
-$color:red;
-.a{
-    color: $color;
-    @include border;
-    .b{
-        color: darken($color,20)
-    }
+*{
+    margin: 0;
+    padding: 0;
 }
-h1{
-	color: green;
-	text-align: center;
+//头部
+
+//内容
+.manin-f1{
+    margin: 0 auto;
+    width: 1200px;
+    position: relative;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.login-bg1{
+    background: url(/images/login1.jpg);
+}
+.login-main{
+    position: relative;
+    width: 1200px;
+    height: 410px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+.L_login{
+   width: 500px;
+   height: 370px;
+   background-color: rgb(255, 255,255); 
+   border-radius: 5px 5px;
+   float: right;
+   padding:10px 10px;
+   margin:10px 10px;
+   opacity: 0.9;
+}
+.login-box-title{
+    text-align: center;
+    border-bottom: 1px solid #877b74;
+    font-family: "微软雅黑";
+    color: #877b74;
+    margin-bottom: 50px;
+    font-size: 24.5px;
+    line-height: 40px;
+}
+.form-horizontal{
+    font-family: 微软雅黑;
+}
+.form-horizontal .control-group{
+    margin-bottom: 20px;
+}
+.form-horizontal .control-label{
+    float: left;
+    width: 160px;
+    padding-top: 5px;
+    text-align: right;
+    display: block;
+    margin-bottom: 5px;
+    line-height: 20px;
+    font-size: 14px;
+}
+.form-horizontal .controls{
+    margin-left: 180px;
+   
+}
+.controls{
+    margin: 0 0 0px;
+}
+.form-horizontal input{
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    background-color: #fff;
+    box-shadow: inset 0 1px 1px rgba(0, 0,0, 0.075);
+}
+input{
+    // height: 20px;
+    padding: 4px 6px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #555;
+    border: 1px solid rgb(218, 217, 217);
+    border-radius: 4px;
+}
+.btn-info{
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 0 -1px 0 rgba(0, 0,0, 0.25);
+    // background-image: linear-gradient(to bottom,#5bc0de,#2f96b4);
+    // background-repeat: repeat-x;
+    // border-color: rgba(0, 0,0, 0.1) rgba(0, 0,0, 0.1) rgba(0, 0,0, 0.25);
+}
+.btn{
+    padding: 4px 12px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    border:1px solid #ccc;
+    border-radius: 5px;
+    zoom: 1;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    overflow: visible;
+    text-decoration: none;
+}
+.links{
+    text-align: center;
+    
+}
+.links a{
+    color: #6B6B6B;
+    font-family: 微软雅黑;
 }
