@@ -33,6 +33,7 @@ body{
 	padding: 0 0 0 20%;
 	overflow: visible;
 	height: 50px;
+	display: flex;
 	line-height: 26px;
 }
 .formPanel .field label{
@@ -41,6 +42,14 @@ body{
 	margin: 0 0 0 -315px;
 	color: #5e5e5e;
 	text-align: right;
+}
+.formPanel .field a{
+	color: #5e5e5e;
+	background: #dad9d9;
+	height: 25px;
+    margin-left: 5px;
+    width: 43px;
+    text-align: center;
 }
 .txt7{
 	width: 170px;
@@ -56,6 +65,7 @@ body{
 }
 .txt3{
 	width: 75px;
+	height: 20px;
 }
 .errormsg{
 	padding: 2px 15px 3px 15px;

@@ -58,16 +58,19 @@ $(".nav-one-box").on("mouseleave", function(){
          timer=setInterval(autoPlay,4000);
      })
      //图片导航效果
+    //  console.log($(".nav-img"));
    $(".recoldmodel").mouseenter(function(){
        $(this).find(".review-wrapper").animate({"opacity":1,"height":45,"left":0},100);
    }).mouseleave(function(){
        $(this).find(".review-wrapper").animate({"opacity":0,"height":0,"left":0},100);
    })
+//    console.log( $(".nav-img").eq(0).find(".review-wrapper"))
    $(".nav-img").mouseenter(function(){
        $(this).find(".review-wrapper").animate({"opacity":1,"height":45},100);
    }).mouseleave(function(){
        $(this).find(".review-wrapper").animate({"opacity":0,"height":0},100);
    })
+
    //楼梯效果
    var $list = $("#LoutiNav li:not(.last)");
    var $floor = $(".Louti");
@@ -115,3 +118,7 @@ $(".nav-one-box").on("mouseleave", function(){
            }
        }
    })
+
+//    sessionStorage["age"] = 30;
+
+//    console.log( sessionStorage["age"])

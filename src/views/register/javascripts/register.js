@@ -95,18 +95,27 @@ var fm=document.querySelector("form");
    $id("btn").onclick=function(){
     $id("yz").innerHTML=yzm();
   }  
-  //验证图片码不能为空
   $id("v_code").onblur=function(){
-    // var  v_code=$("v_code").value;
-     if($id("v_code").value==""){
-            alert("不能为空");
-     }
-    // alert("a");
+      console.log(1);
+      var txt=$id("v_code").value;
+      var txt1=$id("yz").innerHTML;
+      if(txt!==txt1){
+        $id("ti").innerHTML="不能为空";
+      }
   }
+  //验证图片码不能为空
+//   $id("v_code").onblur=function(){
+//     // var  v_code=$("v_code").value;
+//      if($id("v_code").value==""){
+//         $id("ti").innerHTML="不能为空";
+//      }
+//     // alert("a");
+//   }
   //验证短信不能为空
  $id("yzm").onblur=function(){
+    //  alert(1)
      if($id("yzm").value==""){
-        alert("不能为空");
+        $id("getcodeerror").innerHTML="不能为空";
      }
  }
 fm.onsubmit=function(){

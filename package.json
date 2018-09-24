@@ -1,7 +1,7 @@
 {
   "name": "project1",
   "version": "1.0.0",
-  "description": "",
+  "description": "BK-1811一个基于GULP+WEB开发",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -30,5 +30,13 @@
   },
   "dependencies": {
     "gulp-htmlmin": "^5.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yxj1124/1811-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yxj1124/1811-demo/issues"
+  },
+  "homepage": "https://github.com/yxj1124/1811-demo#readme"
 }

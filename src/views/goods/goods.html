@@ -10,135 +10,432 @@
 </head>
 <body>
       <!-- 头部 -->
-		<div style="height:120px;">
-                <!-- 导航 -->
-            <div class="container" id="jid">
-                <!-- logo和登录注册 -->
-                <div class="header-bar">
-                    <div class="dp_logo">
-                        <img alt="大朴网" src="/images/dapu_homelogo.png" width="390" height="58" border="0">
-                    </div>
-                    <div style="position:absolute;top:20px;left:435px;">
-                      <img src="/images/201808240001.png" alt style="width:328px;height:45px;">  
-                    </div>
-                    <div class="rigth-bar">
-                        <div class="search-bar">
-                            <div class="dp-2013090511" style="z-index:15;width:210px">
-                                <form action="/search-result.html" method="POST" class="SearchBar searchBar_">
-                                <input style="width:200px;" type="text" class="search-key" placeholder="想要买什么？" id="searchkey" >
-                                     <input type="submit" class="search-btn" value="" >
-                                </form>
+      <div class="header" >
+        <div style="height:120px;">
+            <!-- 导航 -->
+        <div class="container" id="jid">
+            <!-- logo和登录注册 -->
+            <div class="header-bar">
+                <div class="dp_logo">
+                    <img alt="大朴网" src="/images/dapu_homelogo.png" width="390" height="58" border="0">
+                </div>
+                <div class="rigth-bar">
+                    <div class="search-bar">
+                        <div class="dp-2013090511" style="z-index:15;width:210px">
+                            <form action="/search-result.html" method="POST" class="SearchBar searchBar_">
+                            <input style="width:200px;" type="text" class="search-key" placeholder="想要买什么？" id="searchkey" >
+                                 <input type="submit" class="search-btn" value="" >
+                            </form>
 
-                            </div>
                         </div>
-                       <div class="car-bar" >
-                           <div class="minicart_5542 minicart_box">
-                               <div class="minicart_title">
-                                   <a class="car-container" style="text-decoration:none" href="#">
-                                  <span class="cart-handle" style="height: 25px;color: rgba(255,255, 255);background-image:url(/images/dapu_minicart.png);position:relative;width: 29px; ">
-                                     <span class="cart-number">0</span>
-                                  </span>
-                                  </a>
-                               </div>
-                           </div>
-                       </div>   
-                      
-                       <div class="login-bar">
-                           <div class="foobar_5544">
-                               <div class="login-info-0905" style="background-color: rgb(177, 84,79);color: #ffffff;">
-                                    <span class="loginBar ie-bug" id="loginBar_5544" style="display: inline;">
-                                       <a href="/list/list.html">登录</a>
-                                       <span class="break" style="margin-left:5px;margin-right: 5px;">|</span>
-                                       <a href="/register/register.html">注册</a>
-                                    </span> 
-                              </div>
+                    </div>
+                   <div class="car-bar" >
+                       <div class="minicart_5542 minicart_box">
+                           <div class="minicart_title">
+                               <a class="car-container" style="text-decoration:none" href="#">
+                              <span class="cart-handle" style="height: 25px;color: rgba(255,255, 255);background-image:url(/images/dapu_minicart.png);position:relative;width: 29px; ">
+                                 <span class="cart-number">0</span>
+                              </span>
+                              </a>
                            </div>
                        </div>
-                    </div>
+                   </div>   
+                  
+                   <div class="login-bar">
+                       <div class="foobar_5544">
+                           <div class="login-info-0905" style="background-color: rgb(177, 84,79);color: #ffffff;">
+                                <span class="loginBar ie-bug" id="loginBar_5544" style="display: inline;">
+                                   <a href="/list/list.html">登录</a>
+                                   <span class="break" style="margin-left:5px;margin-right: 5px;">|</span>
+                                   <a href="/register/register.html">注册</a>
+                                </span> 
+                          </div>
+                       </div>
+                   </div>
                 </div>
-                <!-- 分类导航 -->
-                <div class="container">
-                    <div class="sysemenu_bar">
-                        <div class="user-ui-header-box">
-                            <ul class="clearfix">
-                                <li class="index-nav-one-box nav-one-box">
+            </div>
+            <!-- 分类导航 -->
+            <div class="container">
+                <div class="sysemenu_bar">
+                    <div class="user-ui-header-box">
+                        <ul class="clearfix">
+                            <li class="index-nav-one-box nav-one-box">
+                                <a class="nav-one" href="/index/index.html">
+                                    <span class="title">首页</span>
+                                    <span class="separator"></span>
+                                </a>
+                            </li>
+                            <li class="nav-one-box">
                                     <a class="nav-one" href="#">
-                                        <span class="title">首页</span>
+                                        <span class="title">大朴优选</span>
                                         <span class="separator"></span>
                                     </a>
+                                    <div class="dh-show-tab tab-left dh-tab-1" style="display:none;">
+                                            <div class="nav-two-box">
+                                                  <a class="nav-two" href="javascript:;"  target="_blank" >特色美食</a>
+                                       <div class="nav-three-box clearfix">
+                                                               <a class="nav-three" href="javascript:;" target="_blank" >风干美食</a>
+                                                          </div>
+                                                </div>
+                                   </div>
                                 </li>
-                                <li class="nav-one-box">
+                            <li class="nav-one-box">
                                         <a class="nav-one" href="#">
-                                            <span class="title">大朴优选</span>
+                                            <span class="title">卧室用品</span>
                                             <span class="separator"></span>
                                         </a>
+                                        <div style="display:none;" class="dh-show-tab tab-left dh-tab-1">
+                                                <div class="nav-two-box">
+                                                      <a class="nav-two" href="javascript:;"  target="_blank" >床品件套</a>
+                                           <div class="nav-three-box clearfix">
+                                                                   <a class="nav-three" href="javascript:;" target="_blank" >花鸟件套</a>
+                                                                      <a class="nav-three" href="javascript:;" target="_blank" >婚庆件套</a>
+                                                                      <a class="nav-three" href="javascript:;" target="_blank" >四件套/三件套</a>
+                                                                      <a class="nav-three" href="javascript:;" target="_blank" >床单/床笠</a>
+                                                                      <a class="nav-three" href="javascript:;" target="_blank" >枕巾/枕套</a>
+                                                                      <a class="nav-three" href="javascript:;" target="_blank" >被罩</a>
+                                                                      <a class="nav-three" href="javascript:;" target="_blank" >靠垫/靠垫套</a>
+                                                              </div>
+                                                      <a class="nav-two" href="javascript:;"  target="_blank" >被子枕头</a>
+                                           <div class="nav-three-box clearfix">
+                                                                   <a class="nav-three" href="javascript:;" target="_blank" >被芯</a>
+                                                                      <a class="nav-three" href="javascript:;" target="_blank" >枕头</a>
+                                                                      <a class="nav-three" href="javascript:;" target="_blank" >床垫</a>
+                                                                      <a class="nav-three" href="javascript:;" target="_blank" >夏凉被/毯子</a>
+                                                              </div>
+                                                      <a class="nav-two" href="javascript:;"  target="_blank" >夏凉床品</a>
+                                           <div class="nav-three-box clearfix">
+                                                                   <a class="nav-three" href="javascript:;" target="_blank" >老粗布系列</a>
+                                                                      <a class="nav-three" href="javascript:;" target="_blank" >亚麻系列</a>
+                                                                      <a class="nav-three" href="javascript:;" target="_blank" >蔺草席</a>
+                                                                      <a class="nav-three" href="javascript:;" target="_blank" >蚊帐</a>
+                                                              </div>
+                                                      <a class="nav-two" href="javascript:;"  target="_blank" >智能家居</a>
+                                           <div class="nav-three-box clearfix">
+                                                                   <a class="nav-three" href="javascript:;" target="_blank" >止鼾枕</a>
+                                                              </div>
+                                                    </div>
+                                       </div>
+                                </li>
+                            <li class="nav-one-box">
+                                        <a class="nav-one" href="/goods/goods.html">
+                                            <span class="title">冠军毛巾</span>
+                                            <span class="separator"></span>
+                                        </a>
+                                        <div style="display:none;" class="dh-show-tab tab-left dh-tab-1">
+                                                <div class="nav-two-box">
+                                                      <a class="nav-two" href="javascript:;"  target="_blank" >毛巾浴巾</a>
+                                           <div class="nav-three-box clearfix">
+                                                                   <a class="nav-three" href="javascript:;" target="_blank" >毛巾</a>
+                                                                      <a class="nav-three" href="javascript:;" target="_blank" >方巾</a>
+                                                                      <a class="nav-three" href="javascript:;" target="_blank" >浴巾/浴袍</a>
+                                                              </div>
+                                                      <a class="nav-two" href="javascript:;"  target="_blank" >地巾地垫</a>
+                                           <div class="nav-three-box clearfix">
+                                                                   <a class="nav-three" href="javascript:;" target="_blank" >地巾地垫</a>
+                                                              </div>
+                                                    </div>
+                                       </div>
                                     </li>
-                                <li class="nav-one-box">
+                            <li class="nav-one-box">
                                             <a class="nav-one" href="#">
-                                                <span class="title">卧室用品</span>
+                                                <span class="title">袜子拖鞋</span>
                                                 <span class="separator"></span>
                                             </a>
+                                            <div style="display:none;" class="dh-show-tab tab-left dh-tab-1">
+                                                    <div class="nav-two-box">
+                                                          <a class="nav-two" href="javascript:;"  target="_blank" >女士袜子</a>
+                                               <div class="nav-three-box clearfix">
+                                                               </div>
+                                                          <a class="nav-two" href="javascript:;"  target="_blank" >男士袜子</a>
+                                               <div class="nav-three-box clearfix">
+                                                               </div>
+                                                          <a class="nav-two" href="javascript:;"  target="_blank" >家居拖鞋</a>
+                                               <div class="nav-three-box clearfix">
+                                                               </div>
+                                                          <a class="nav-two" href="javascript:;"  target="_blank" >浴室拖鞋</a>
+                                               <div class="nav-three-box clearfix">
+                                                               </div>
+                                                          <a class="nav-two" href="javascript:;"  target="_blank" >儿童拖鞋</a>
+                                               <div class="nav-three-box clearfix">
+                                                               </div>
+                                                        </div>
+                                           </div>
                                     </li>
-                                <li class="nav-one-box">
+                            <li class="nav-one-box">
                                             <a class="nav-one" href="#">
-                                                <span class="title">冠军毛巾</span>
+                                                <span class="title">服饰</span>
                                                 <span class="separator"></span>
                                             </a>
-                                        </li>
-                                <li class="nav-one-box">
-                                                <a class="nav-one" href="#">
-                                                    <span class="title">袜子拖鞋</span>
-                                                    <span class="separator"></span>
-                                                </a>
-                                        </li>
-                                <li class="nav-one-box">
-                                                <a class="nav-one" href="#">
-                                                    <span class="title">服饰</span>
-                                                    <span class="separator"></span>
-                                                </a>
-                                       </li>
-                                <li class="nav-one-box">
-                                  <a class="nav-one" href="#">
-                                    <span class="title">清洁日用</span>
+                                            <div style="display:none;" class="dh-show-tab tab-left dh-tab-1">
+                                                    <div class="nav-two-box">
+                                                          <a class="nav-two" href="javascript:;"  target="_blank" >女装</a>
+                                               <div class="nav-three-box clearfix">
+                                                                       <a class="nav-three" href="javascript:;" target="_blank" >家居服</a>
+                                                                          <a class="nav-three" href="javascript:;" target="_blank" >T恤/背心</a>
+                                                                          <a class="nav-three" href="javascript:;" target="_blank" >裤子</a>
+                                                                          <a class="nav-three" href="javascript:;" target="_blank" >裙子</a>
+                                                                          <a class="nav-three" href="javascript:;" target="_blank" >衬衫</a>
+                                                                          <a class="nav-three" href="javascript:;" target="_blank" >卫衣/毛衫</a>
+                                                                          <a class="nav-three" href="javascript:;" target="_blank" >保暖内衣</a>
+                                                                  </div>
+                                                          <a class="nav-two" href="javascript:;"  target="_blank" >男装</a>
+                                               <div class="nav-three-box clearfix">
+                                                                       <a class="nav-three" href="javascript:;" target="_blank" >家居服</a>
+                                                                          <a class="nav-three" href="javascript:;" target="_blank" >T恤</a>
+                                                                          <a class="nav-three" href="javascript:;" target="_blank" >卫衣/毛衫</a>
+                                                                          <a class="nav-three" href="javascript:;" target="_blank" >衬衫</a>
+                                                                          <a class="nav-three" href="javascript:;" target="_blank" >裤子</a>
+                                                                          <a class="nav-three" href="javascript:;" target="_blank" >保暖内衣</a>
+                                                                  </div>
+                                                        </div>
+                                           </div>
+                                   </li>
+                            <li class="nav-one-box">
+                              <a class="nav-one" href="#">
+                                <span class="title">清洁日用</span>
+                                <span class="separator"></span>
+                                </a>
+                                <div style="display:none;" class="dh-show-tab tab-left dh-tab-1">
+                                        <div class="nav-two-box">
+                                              <a class="nav-two" href="javascript:;"  target="_blank" >纸巾</a>
+                                   <div class="nav-three-box clearfix">
+                                                   </div>
+                                              <a class="nav-two" href="javascript:;"  target="_blank" >棉签</a>
+                                   <div class="nav-three-box clearfix">
+                                                   </div>
+                                              <a class="nav-two" href="javascript:;"  target="_blank" >日常用品</a>
+                                   <div class="nav-three-box clearfix">
+                                                   </div>
+                                              <a class="nav-two" href="javascript:;"  target="_blank" >洗衣液</a>
+                                   <div class="nav-three-box clearfix">
+                                                   </div>
+                                            </div>
+                               </div>
+                             </li>
+                            <!-- </li> -->
+                            <li class="nav-one-box">
+                                    <a class="nav-one" href="#">
+                                    <span class="title">贴身衣物</span>
                                     <span class="separator"></span>
                                     </a>
-                                            </li>
-                                <li class="nav-one-box">
-                                        <a class="nav-one" href="#">
-                                        <span class="title">贴身衣物</span>
-                                        <span class="separator"></span>
-                                                    </a>
-                                                </li>
-                                <li class="nav-one-box">
-                                                        <a class="nav-one" href="#">
-                                                            <span class="title">婴童用品</span>
-                                                            <span class="separator"></span>
-                                                        </a>
-                                                </li>
-                                <li class="nav-one-box">
+                                    <div style="display:none;" class="dh-show-tab tab-left dh-tab-1">
+                                            <div class="nav-two-box">
+                                                  <a class="nav-two" href="javascript:;"  target="_blank" >女士内衣</a>
+                                       <div class="nav-three-box clearfix">
+                                                               <a class="nav-three" href="javascript:;" target="_blank" >内裤</a>
+                                                                  <a class="nav-three" href="javascript:;" target="_blank" >文胸</a>
+                                                          </div>
+                                                  <a class="nav-two" href="javascript:;"  target="_blank" >男士内衣</a>
+                                       <div class="nav-three-box clearfix">
+                                                               <a class="nav-three" href="javascript:;" target="_blank" >内裤</a>
+                                                          </div>
+                                                </div>
+                                   </div>
+                            </li>
+                            <li class="nav-one-box">
                                     <a class="nav-one" href="#">
-                                        <span class="title">包袋/周边</span>
-                                        <span class="separator"></span>
+                                    <span class="title">婴童用品</span>
+                                    <span class="separator"></span>
                                     </a>
-                                </li>
-                                <li class="nav-one-box">
-                                    <a class="nav-one" href="#">
-                                        <span class="title">渠道客户</span>
-                                        <span class="separator"></span>
-                                    </a>
-                                      </li>
-                                <li class="nav-one-box">
-                                    <a class="nav-one" href="#">
-                                        <span class="title">关于大朴</span>
-                                            </a>
-                                </li>
-                            </ul>
-                        </div>
+                                    <div style="display:none;" class="dh-show-tab tab-left dh-tab-1">
+                                            <div class="nav-two-box">
+                                                  <a class="nav-two" href="javascript:;"  target="_blank" >婴童床品</a>
+                                       <div class="nav-three-box clearfix">
+                                                               <a class="nav-three" href="javascript:;" target="_blank" >床品件套</a>
+                                                                  <a class="nav-three" href="javascript:;" target="_blank" >婴童凉席</a>
+                                                                  <a class="nav-three" href="javascript:;" target="_blank" >抱被/毯子/睡袋</a>
+                                                                  <a class="nav-three" href="javascript:;" target="_blank" >婴童枕头</a>
+                                                                  <a class="nav-three" href="javascript:;" target="_blank" >尿布/隔尿垫</a>
+                                                          </div>
+                                                  <a class="nav-two" href="javascript:;"  target="_blank" >婴童鞋子</a>
+                                       <div class="nav-three-box clearfix">
+                                                               <a class="nav-three" href="javascript:;" target="_blank" >婴童家居鞋</a>
+                                                          </div>
+                                                  <a class="nav-two" href="javascript:;"  target="_blank" >婴童洗浴</a>
+                                       <div class="nav-three-box clearfix">
+                                                               <a class="nav-three" href="javascript:;" target="_blank" >浴巾/浴袍</a>
+                                                                  <a class="nav-three" href="javascript:;" target="_blank" >儿童方巾</a>
+                                                                  <a class="nav-three" href="javascript:;" target="_blank" >儿童毛巾</a>
+                                                          </div>
+                                                  <a class="nav-two" href="javascript:;"  target="_blank" >婴童衣物</a>
+                                       <div class="nav-three-box clearfix">
+                                                               <a class="nav-three" href="javascript:;" target="_blank" >上衣</a>
+                                                                  <a class="nav-three" href="javascript:;" target="_blank" >裤子</a>
+                                                                  <a class="nav-three" href="javascript:;" target="_blank" >内裤</a>
+                                                                  <a class="nav-three" href="javascript:;" target="_blank" >袜子</a>
+                                                                  <a class="nav-three" href="javascript:;" target="_blank" >新生儿礼盒</a>
+                                                                  <a class="nav-three" href="javascript:;" target="_blank" >连体衣/套装</a>
+                                                          </div>
+                                                  <a class="nav-two" href="javascript:;"  target="_blank" >亲子系列</a>
+                                       <div class="nav-three-box clearfix">
+                                                               <a class="nav-three" href="javascript:;" target="_blank" >亲子灯</a>
+                                                          </div>
+                                                </div>
+                                   </div>
+                            </li>
+                            <li class="nav-one-box">
+                                <a class="nav-one" href="#">
+                                    <span class="title">包袋/周边</span>
+                                    <span class="separator"></span>
+                                </a>
+                                <div style="display:none;" class="dh-show-tab tab-left dh-tab-1">
+                                        <div class="nav-two-box">
+                                              <a class="nav-two" href="javascript:;"  target="_blank" >零钱包</a>
+                                   <div class="nav-three-box clearfix">
+                                                   </div>
+                                              <a class="nav-two" href="javascript:;"  target="_blank" >购物包</a>
+                                   <div class="nav-three-box clearfix">
+                                                           <a class="nav-three" href="javascript:;" target="_blank" >亚麻包/亚麻小件</a>
+                                                      </div>
+                                              <a class="nav-two" href="javascript:;"  target="_blank" >杂物包</a>
+                                   <div class="nav-three-box clearfix">
+                                                   </div>
+                                              <a class="nav-two" href="javascript:;"  target="_blank" >棉仔周边</a>
+                                   <div class="nav-three-box clearfix">
+                                                           <a class="nav-three" href="javascript:;" target="_blank" >棉仔公仔</a>
+                                                              <a class="nav-three" href="javascript:;" target="_blank" >棉仔衍生品</a>
+                                                      </div>
+                                            </div>
+                               </div>
+                            </li>
+                            <li class="nav-one-box">
+                                <a class="nav-one" href="#" title="请点击子分类">
+                                    <span class="title">渠道客户</span>
+                                    <span class="separator"></span>
+                                </a>
+                                <div style="display:none;" class="dh-show-tab tab-left dh-tab-1">
+                                        <div class="nav-two-box">
+                                              <a class="nav-two" href="javascript:;"  target="_blank" >礼品卡</a>
+                                   <div class="nav-three-box clearfix">
+                                                   </div>
+                                              <a class="nav-two" href="javascript:;"  target="_blank" >企业客户</a>
+                                   <div class="nav-three-box clearfix">
+                                                   </div>
+                                              <a class="nav-two" href="javascript:;"  target="_blank" >线下加盟</a>
+                                   <div class="nav-three-box clearfix">
+                                                   </div>
+                                            </div>
+                               </div>
+                             </li>
+                            <li class="nav-one-box">
+                                <a class="nav-one" href="#" title="请点击子分类">
+                                    <span class="title">关于大朴</span>
+                                        </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
+            <div class="zhezhao"></div>
         </div>
-        <div style="width:300px;height:300px;border:10px solid;"></div>
+        </div>
+    </div>
+      <!-- 内容 -->
+      <div class="crumb" style="width:100%;height:20p;overflow:hidden;">
+                <span><a href="http://www.dapu.com" alt="" style="color: #615146;" title="">首页</a>&nbsp;&gt;</span>
+                <em id="last_name">冠军毛巾</em>
+        </div>
+      <div class="site-con clearfix" style="width:1200px;">
+        
+
+        <div class="aside">
+    
+                <div class="sort-list" id="sortList">
+                    <div class="hd">
+                        <h2 class="title">所有商品</h2>
+                    </div>
+                    <div class="bd">
+                                            <div class="item expand" id="item_462">
+                                        <p><a href="javascripts:;">袜子拖鞋</a><b></b></p>
+                                    
+                                    </div>
+                                            <div class="item expand" id="item_393">
+                                        <p><a href="javascripts:;">大朴优选</a><b></b></p>
+                                    
+                                    </div>
+                                            <div class="item expand" id="item_67">
+                                        <p><a href="/woshi/">卧室用品</a><b></b></p>
+                                    </div>
+                                            <div class="item expand" id="item_66">
+                                        <p><a href="/yushi/">冠军毛巾</a><b></b></p>
+                                    </div>
+                                            <div class="item expand" id="item_374">
+                                        <p><a href="#">清洁日用</a><b></b></p>
+                                    </div>
+                                            <div class="item expand" id="item_156">
+                                        <p><a href="#">服饰</a><b></b></p>
+                                    </div>
+                                            <div class="item expand" id="item_124">
+                                        <p><a href="/tieshenyiwu/">贴身衣物</a><b></b></p>
+                                    </div>
+                                            <div class="item expand" id="item_158">
+                                        <p><a href="/yingtong/">婴童用品</a><b></b></p>
+                                    </div>
+                                            <div class="item expand" id="item_301">
+                                        <p><a href="/baodai/">包袋/周边</a><b></b></p>
+                                        
+                                    </div>
+                                            <div class="item expand" id="item_136">
+                                        <p><a href="/lipin/">礼品周边</a><b></b></p>
+                                        
+                                    </div>
+                     </div>
+                </div>
+                <div class="recent-items">
+                    <div class="mod-hd">
+                        <h2>浏览过的商品</h2>
+                    </div>
+                    <ul class="items" id="box_6339">
+                        <li style="height:auto;"><div class="goodpic"><a href="javascripts:;" style="width:140px; height:140px;" target="_blank" title="精梳纯棉缎纹磨毛纯色四件套"><img src="https://p1.dapuimg.com/public/images/ef/6c/54/daba49f0b4bf7979db55cd7daf24d4ef.jpg?1537423747#h" width="70" height="70" alt="精梳纯棉缎纹磨毛纯色四件套"></a></div><div class="pic-info"><span class="name"><a href="javascripts:;" target="_blank" >精梳纯棉缎纹磨毛纯色四件套</a></span></div></li>
+                        <li style="height:auto;"><div class="goodpic"><a href="javascripts:;" style="width:140px; height:140px;" target="_blank" title="草木染花色浴巾" inner_img="" gid="2123"><img src="https://p2.dapuimg.com/public/images/45/21/27/a2c35dd8de49da6bdaf2fe0624fdcc5a.jpg?1537524875#h" width="70" height="70" alt="草木染花色浴巾"></a></div><div class="pic-info"><span class="name"><a href="javascripts:;" target="_blank" title="草木染花色浴巾">草木染花色浴巾</a></span><span class="price"></span></div></li>
+                    </ul>
+                </div>
+                
+               
+                <div class="textright">
+                  <a class="lnk clearAll" >清除列表</a><span>&nbsp;&nbsp;</span>
+                </div>
+                
+                <a href="javascripts:;" target="_blank">
+                    <img alt="大朴网" src="/images/chuangpin1600X1200.jpg" width="230" height="183">
+                </a>
+        </div>
+        <div class="main-con">
+            <div class="hd sd">
+                <h1 style="font-size:14px;float:left;border-bottom: 1px solid #6b6b6b;padding: 0 10px 0 0;" id="tp_name">冠军毛巾</h1>
+                <h2>商品筛选</h2>
+                <a href="javascript:;" class="reset">重置筛选条件</a>
+            </div>
+            <div class="products" style="height:2800px;">
+                <!-- <div class="goodspic sideborder">
+                    <div class="goods-spec-pic">
+                                        <div class="bj">
+                            </div>
+                                    <a class="review_module" href="/product-2123.html" target="_blank">
+                            <img class="no-images" src="https://p2.dapuimg.com/public/images/93/87/65/ea9e030d4a24b9245280650146d1c185.jpg?1537524875#h" alt="草木染花色浴巾">
+                        </a>
+                    </div>
+                    <div class="picscroll">
+                      <div class="goods-detail-pic-thumbnail goods-detail-x pics nb" >
+                              <ul class="goods-detail-pic-thumbnail pics-content">
+                                  <li>
+                                        <a href="javascript:;" target="_blank">
+                                        <img src="http://p1.dapuimg.com/public/images/45/21/27/a2c35dd8de49da6bdaf2fe0624fdcc5a.jpg?1537524875#h" >
+                                        </a>
+                                   </li>
+                              </ul>
+                        </div>
+                    </div>
+                    <div class="goodtext">
+                            <p class="p1"><span>￥199</span></p>
+                            <a href="/product-2123.html" target="_blank">草木染花色浴巾</a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+      </div>
+       
         <!-- 尾部 -->
         <div class="footer">
 				<div class="container">
@@ -161,7 +458,93 @@
 		</div> 
 </body>
 </html>
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 
-        <!--inject:js-->
-		<!--endinject-->
+<!-- <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> -->
+<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!--inject:js-->
+ <!--endinject-->
+
+ <script>
+ $(function () {
+            
+
+            init();
+
+            function init() { // 初始化函数
+                get_list_goods(render_goods_in_list); // 获取数据
+                // add_event_listener(); // 给元素们绑定事件
+            }
+           
+            function get_list_goods(callback) { // 获取列表中商品数据的
+                $.ajax({
+                    url: '/data.json',
+                    success (res) {
+                        if (res.code == 200) {
+                            callback(res.data); // 将数据交由回调函数处理
+                        } else {
+                            alert('接口获取失败');
+                        }
+                    },
+                    error () {
+                        alert('接口获取失败');
+                    }
+                })
+            }
+
+            function render_goods_in_list(data) { // 能接收到需要渲染的数据，作用是渲染数据
+                var str = ''
+                data.forEach(item => {
+                    str += good_item_template(item);
+                });
+                $('.products').html(str);
+            }
+
+            function good_item_template(good) { // 接收到对应的商品数据，返回拼接好的模板
+                let { good_id, good_name, good_price, good_image } = good;
+                return `
+                <div  data-id="${good_id}" class="goodspic sideborder">
+                    <div class="goods-spec-pic">
+                                        <div class="bj">
+                            </div>
+                                    <a class="review_module" href="javascript:;" target="_blank">
+                            <img class="no-images" src="${good_image}">
+                        </a>
+                    </div>
+                    <div class="picscroll">
+                      <div class="goods-detail-pic-thumbnail goods-detail-x pics nb" >
+                              <ul class="goods-detail-pic-thumbnail pics-content">
+                                  <li>
+                                        <a href="javascript:;" target="_blank">
+                                        <img src="${good_image}" >
+                                        </a>
+                                   </li>
+                              </ul>
+                        </div>
+                    </div>
+                    <div class="goodtext">
+                            <p class="p1"><span>${good_price}</span></p>
+                            <a href="../product/product.html" target="_blank">${good_name}</a>
+                    </div>
+                </div>
+                `
+            }
+})
+
+ $('.products').click(function(e){
+     console.log(22);
+                var target=$(e.target);
+                // console.log(target.attr("class"));
+                if(target.attr("class")=="no-images"){
+                    var id = target.parent().parent().parent().attr("data-id");
+                    console.log(id);
+                    if(id){
+                        window.open("../product/product.html?id="+id)
+                    }
+                }
+
+            })
+        
+    
+ </script>

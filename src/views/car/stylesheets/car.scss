@@ -1,0 +1,23 @@
+// 内容
+  .app { width: 1000px; padding-top: 50px; }
+  .good-item .good-img { width: 116px;height:100px;margin-bottom: 0px;margin-right: 25px; }
+  .controls { width: 250px; margin-top: 19px; }
+  .controls .btns { text-align: center; }
+  .controls .btns *{ display: inline-block; }
+  .btns input { width:80px; }
+  .delete-btn { display: block; margin: 0 auto; }
+  .all .label{ position: relative; top: -2px; margin: 0 10px;}
+  .message { display: none }
+  .number { text-align: center; }
+  .check-box { height: 138px; line-height: 138px;margin-right: 15px; }
+  .clearfix {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.img{
+  width: 70px;
+}
+.panel-heading{
+  margin-bottom: 10px;
+}
