@@ -52,7 +52,8 @@ $.ajax({
                 <div class="goods-price-box clearfix" style="margin-bottom:5px;">
                         <span style="display:inline-block;width:50px;text-align:center;font-size: 12px;color:#ffffff;background:#7F5B42;padding:2px 5px;font-weight: bold;border-radius:3px 3px;">会员价</span>
                         <span class="mlvprice" style="color:#7F5B42;padding-left:10px;font-weight: bold;">￥47</span>
-                        <a style="color:#ff0000;text-decoration: none;" target="_blank" href="http://www.dapu.com/index.php/article-bangzhuzhongxin_tesesuwu-24.html">如何成为会员？</a>
+                        <a style="color:#ff0000;text-decoration: none;" target="_blank" href="
+                        #">如何成为会员？</a>
                 </div>
                 <div id="promotion_show" class="clearfix" style="margin-bottom: 5px;">
                         <span style="display:inline-block;width:50px;text-align:center;font-size: 12px;color:#ffffff;background:#b1544f;padding:2px 5px;font-weight: bold;border-radius:3px 3px;">促销</span>
